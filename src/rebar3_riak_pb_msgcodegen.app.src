@@ -1,0 +1,11 @@
+{application, rebar3_riak_pb_msgcodegen, [
+  {description, "Plugin to compile CSV files into a module lookup table"},
+  {vsn, "0.0.10"},
+  {registered, []},
+  {applications, [kernel, stdlib]},
+  {env, []},
+
+  {contributors, ["Basho"]},
+  {licenses, ["Apache"]},
+  {links, [{"Github", "https://github.com/basho/riak_pb"}]}
+]}.
