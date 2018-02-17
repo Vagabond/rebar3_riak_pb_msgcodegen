@@ -87,7 +87,7 @@ mod_name(SourceFile) ->
     filename:basename(SourceFile, ".csv").
 
 fq_erl_file(SourceFile) ->
-    filename:join(["src", erl_file(SourceFile)]).
+    filename:join([filename:dirname(SourceFile), erl_file(SourceFile)]).
 
 erl_file(SourceFile) ->
     mod_name(SourceFile) ++ ".erl".
